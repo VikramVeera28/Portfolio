@@ -6,11 +6,15 @@ import BootstrapImage from '../../assets/Image/Icons/Bootstrap.png';
 import ReactImage from '../../assets/Image/Icons/React.png';
 import MuiImage from '../../assets/Image/Icons/MUI.png';
 import BootstrapReactImage from '../../assets/Image/Icons/BootstrapReact.png';
+import PythonImage from '../../assets/Image/Icons/Python.png';
+import DjangoImage from '../../assets/Image/Icons/Django.png';
+import MysqlImage from '../../assets/Image/Icons/Mysql.png';
+import JsonImage from '../../assets/Image/Icons/Json.png';
 
 export const Skills = () => {
   const skills = [
       {
-        'Frondend_Skills' : [
+        'Web Design' : [
           {
             id : 1,
             name: 'HTML',
@@ -25,7 +29,11 @@ export const Skills = () => {
             id : 3,
             name: 'JavaScript',
             image: JsImage
-          },
+          }
+        ]
+      },
+      {
+        'FrameWork' : [
           {
             id : 4,
             name: 'Boostrap',
@@ -53,22 +61,26 @@ export const Skills = () => {
           {
             id : 1,
             name: 'Python',
-            image: null
+            image: PythonImage
           },
           {
             id : 2,
             name: 'Django',
-            image: null
-          },
+            image: DjangoImage
+          }
+        ]
+      },
+      {
+        'Database & Server' : [
           {
             id : 3,
             name: 'MySql',
-            image: null
+            image: MysqlImage
           },
           {
             id : 4,
             name: 'Json-Server',
-            image: null
+            image: JsonImage
           }
         ]
       }
@@ -91,7 +103,7 @@ export const Skills = () => {
                   <h1 className="display-6 col-12 lead text-warning mb-5">{key}</h1>
                   {value.map((skill) => (
                     <div key={skill.id} className="col-12 col-sm-6 col-md-4 skill-box">
-                      <img src={skill.image} className='my-3' width="90px" height="90px" alt={skill.name} />
+                      <img src={skill.image} className='my-3 skill-icon' width="90px" height="90px" alt={skill.name} />
                     </div>
                   ))}
                   </div>
